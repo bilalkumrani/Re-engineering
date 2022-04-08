@@ -1,0 +1,399 @@
+
+
+::::::::::::::::::::::Slide 1 Intro to software Reengineering::::::::::::::::::::::::::::::
+
+ -->characterstics of lagacy project:
+
+old
+large
+inherited
+
+ -->Legacy Code:
+ untested and untestable code
+ inflexible code
+ technical debt(not perfect but working for now)
+ 
+  -->Legacy infrastructure
+  Development enviroment
+  outdated dependencies
+  Hetrogenious enviroment
+  
+  
+  Upgrades provide performance but it is too difficult task to upgrade
+  
+  
+  -->Legacy culture
+  Existing team maintaining software
+  Fear of change (which bugs are safe to fix, which feature is no longer in use etc..)
+  Lack of knowledge
+  lack of communication
+  code ego
+  
+  
+  -->software developer face
+  deciding where to start for refactoring
+  
+  
+  
+  --> software reengineering steps:
+  
+  1-business process reeingneering
+  	chnage in business process to archive breakthrough results
+  	
+  2-software reengineering process
+  	rebuilding a software to create another with added functionality better performance
+  	
+  	
+ BPR model: (business process reengineering)
+ business defination
+ process identification
+ refinement and instantiation
+ process evaluation
+ process specification
+ design
+ 
+ 
+ Software Reengineering process model
+ Inventory analysis (whcih software need to be reengineered)
+ Document restructuring (rewrite documentation)
+ Reverse engineering (get design from existing source code and restructure it to archive quality and performance)
+ Data restructuring (updtate data architecture)
+ code restructuring (code is analylzed and violation of programming practices is noted and repaired )
+ 
+ 
+ 
+ 
+ ::::::::::::::::::::::Slide 2 Intro to software Reengineering::::::::::::::::::::::::::::::
+ 
+ When to reengineer ??
+ 
+ - When system changes are mostly confined to part of the system then re-engineer that part
+
+- when software and hardware support becomes obselete
+
+- when tools to support restructuring are available
+
+
+ReEngineering advantages?
+
+- Reduced risk (new development: development problem, staffing problem, specification problem)
+- Reduced cost (cost of reengineering is less than cost of building new software)
+
+
+Rengineering cost factors:
+-quality
+-tools
+-data conversion
+-expert staff
+
+
+Rengineering approaches
+- Automated program restructuring (less cost)
+- Program and data restructuring (more costly)
+
+
+
+Source code Translation
+- from one language to another languge
+- because of hardware, staff skills, organisational policy
+- 
+
+Program translation process
+- identify source code differences
+- design translation instructions
+- auto translate code
+- manually translate code
+
+
+Reverse engineering:
+anaylizing software to get specification and design
+builds program database and generate information from it.
+
+Reverse engineering process:
+ 
+          |--> automated analysis |
+system -->|                       | --> system information store |-->(program structure diagram)
+	  |--> manual anotation   | 					(data structure diagram)
+									(traciblity matri)
+             
+             
+             
+Reverse engieering some times performs for reengineering the products
+and sometimes it is performed for to get specification and use them for maintainance
+
+
+
+Program structure improvement
+- remove unconditional branches
+- simplify conditions so they become more readable
+- conver spagheti logic to structured control logic
+
+
+Problems with restructuring
+- loss of comments
+- loss of documents
+- heavy computational demands
+- restructring dosent help with poor modularization
+
+
+Program modularization:
+- The process of re-organising a program so that related program parts are collected together in a single module.
+- Usually a manual process that is carried out by program inspection and re-organisation.
+
+
+Module types
+Data abstraction (abstract data types)
+Hardware module (all functions that require interface to hardware unit)
+Functional module (contains functions that perform related tasks)
+process support module (functions support a business process)
+
+
+
+Data reengineering
+- analysing and reorganising datastructures some time values
+- maybe part of process of migrating from text to database 
+- objective is to create managed data enviroment
+
+
+
+Approaches to data reEngineering
+- data cleanup (duplicate removed, redundant is deleted, consisten format applied)
+- data extension (data and associated programs are reengineered to remove limits on data processing)
+- data migration (data is moved into control of modern dbms)
+
+Data conversion
+- data reengineering data structures not data values.
+- data values conversion is very expensive.
+
+
+
+Key points:
+- we do reengineering to make system easy to understand and maintain
+- it involves( source code translation, reverse engineering, program structure improvment, program modularization and data reengineering)
+
+- Reverse engineerin is process of deriving system design and specification from the code.
+- program structure improvement replaces unstructured control constructs with while loops 
+and simple conditions.
+- modularization involves grouping related items together.
+- data reengineering performed when there is inconsistant data management.
+
+
+
+
+
+
+
+
+
+ ::::::::::::::::::::::Slide 3 Legacy system migration::::::::::::::::::::::::::::::
+
+Legacy system migration
+How migration improves performance
+
+
+-Legacy system migration refers to the modernization of old IT systems to a newer
+hardware infrastructure or software platform.
+
+
+- migrating from legacy to cloud can improve performance
+- system performance is poor and its maintainance is costly
+- incompatibily with new technologies
+- lack of vendor and main support to privacy
+
+Lift and shift
+- Lift and Shift Meaning. The lift and shift migration approach is about migrating your application and associated data to the cloud with minimal or no changes.
+- This is because of cost or technology obsolesence.
+- in these scenarios, the IT organization is looking to rebuild the existing system on a one-to-one basis, and there is no compelling or urgent need for significant change on the side of the business.
+
+
+
+
+How to successfully transform a system?
+The key to a successful legacy system transformation is to find the way to slowley
+piece by piece replace your existing system with newers system which matches with the business need
+and give competetive edge.
+
+Migration process:
+1- identify the data, format, location, senstivity.(what data you are moving, what is current format, what
+format will be after migration) security measures are taken for sensitive data.
+2- Determine technical, time, financial requirement. (be realistic with estimation)
+
+3- Backup all your data.
+
+4- Execute your data migration plan(follow each step of your data migration plan)
+
+5- test system after each phase of migration
+
+6- follow up with any maintainance
+
+<<will read paper>>>
+
+
+ 
+ 
+ 
+  ::::::::::::::::::::::Slide 4 Software evolution::::::::::::::::::::::::::::::
+ 
+ -Software change is inevitable (new requirement, bsness enviroment changes, errors, new equipmetn,performance)
+ 
+ - A problem for all organizations is implementing and managing change to existing softwares.
+ 
+- importance of evolution
+	-huge investment in software systems.
+	-must be chnaged upadated.
+	-huge budget is for maintaining, evolving current systems rather than developing new one.
+	
+ -A spiral model of development and evolution 
+ 
+ Specification --> implementation --> Validation --> Operation
+ 
+ -Evolution and servicing 
+  Software development --> Software evolution --> Software servicing --> Software retirement
+  
+  
+  Evolution
+- when we are adding any new feature.
+
+ Servicing
+- not adding new feature but if there is a bug we fix that bugs and erros
+ 
+ 
+ Phase-out
+- The software may still be used but no further changes are made to it.(release)
+
+ Evolution process
+ - Software evolution processes depend on (type, dev process used, staff).
+ - Proposal for change is driver for system evolution.
+ - change identification and evolution continues throut the system lifetime
+ 
+ change identification --> change proposal --> evolution --> new system
+ 
+ 
+ Change implementation:
+  1- program understanding
+  2- how proposed change might affect
+  
+             |<------------------| 
+  proposed changes --> requirment analysis---->Requirment update --> software development.
+  
+  
+  Urgent change request:
+  - they may have implemented without going through all stages of software engineering process.
+  	(fault has to be repaird, os upgrade, business change)
+ 
+ 
+ 
+ Emergency repair process:
+ change request --> analyze source code --> modify code --> deliver modified system
+ 
+ 
+ 
+ Agile method and evolution
+ - Agile methods are based on incremental development so the transition from development to evolution is a seamless one
+ 
+ Handover problems
+ development team used agile method and maintainance team is not aware of this method and using other plan
+ base approach, and viceversa
+ 
+ 
+ 
+ Types of maintainance
+- fault repairs (fix bugs)
+- Enviromental adaptation (os etc)
+- Functionality addition and modification (satisfy new requirements)
+
+
+
+
+  ::::::::::::::::::::::Slide 5 Software starting point for refactoring::::::::::::::::::::::::::::::
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
