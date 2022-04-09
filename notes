@@ -1,6 +1,6 @@
 
 
-::::::::::::::::::::::Slide 1 Intro to software Reengineering::::::::::::::::::::::::::::::
+::::::::::::::::::::::PPT 1 Intro to software Reengineering::::::::::::::::::::::::::::::
 
  -->characterstics of lagacy project:
 
@@ -63,7 +63,7 @@ inherited
  
  
  
- ::::::::::::::::::::::Slide 2 Intro to software Reengineering::::::::::::::::::::::::::::::
+ ::::::::::::::::::::::PPT 2 Intro to software Reengineering::::::::::::::::::::::::::::::
  
  When to reengineer ??
  
@@ -185,7 +185,7 @@ and simple conditions.
 
 
 
- ::::::::::::::::::::::Slide 3 Legacy system migration::::::::::::::::::::::::::::::
+ ::::::::::::::::::::::PPT 3 Legacy system migration::::::::::::::::::::::::::::::
 
 Legacy system migration
 How migration improves performance
@@ -232,7 +232,7 @@ format will be after migration) security measures are taken for sensitive data.
  
  
  
-  ::::::::::::::::::::::Slide 4 Software evolution::::::::::::::::::::::::::::::
+  ::::::::::::::::::::::PPT 4 Software evolution::::::::::::::::::::::::::::::
  
  -Software change is inevitable (new requirement, bsness enviroment changes, errors, new equipmetn,performance)
  
